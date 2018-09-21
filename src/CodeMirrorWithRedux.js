@@ -127,7 +127,7 @@ class CodeMirrorEditor extends React.Component {
   render() {
     return (
       <CodeMirror
-        value={this.props.code}
+        value={this.props.codeEditors.get(this.props.id)}
         onBeforeChange={this.onCodeChange}
         options={{
           mode: "javascript",
@@ -141,7 +141,7 @@ class CodeMirrorEditor extends React.Component {
 const mapStateToProps = (state, props) => {
   const codeEditors = state.get('codeEditors');
   return {
-    code: codeEditors.get(props.id),
+    codeEditors
   }
 };
 export default connect(mapStateToProps)(CodeMirrorEditor);
