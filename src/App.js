@@ -7,7 +7,7 @@ import './App.css';
 import { configureStore } from './store';
 class App extends Component {
   render() {
-    const codeEditors = range(0,20);
+    const codeEditors = range(0,50);
     return (
       <Provider store={configureStore()}>
         <div className="App">
