@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { map, range } from 'ramda';
 import { Provider } from 'react-redux';
 import logo from './logo.svg';
-import CodeEditor from './CodeMirrorWithRedux';
+import CodeEditor from './CodeMirror';
 import './App.css';
 import { configureStore } from './store';
 class App extends Component {
